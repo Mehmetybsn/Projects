@@ -1,0 +1,180 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,h2,h3,p {
+    margin: 24px;
+}
+
+h2, h3 {
+    color: brown;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#root > header {
+    background-color: #333;
+    color: #fff;
+    padding: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#root > header > nav ul {
+    display: flex;
+    gap: 24px;
+} 
+
+main {
+    padding: 24px;
+    background-color: pink;
+}
+
+main section:nth-of-type(2) h2,main section:nth-of-type(3) h2 {
+    
+    padding: 16px 24px;
+}
+
+
+ #art-works {
+    position: relative;
+ }
+#art-works p {
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+
+#inventions {
+    position: relative;
+ }
+#inventions p {
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+
+
+
+
+#root > footer {
+    background-color: #333;
+    color: #fff;
+    padding: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#root > footer > nav ul {
+    display: flex;
+    gap: 24px;
+} 
+
+
+
+
+/* -----  Carousel ----- */
+.carousel{
+    
+    width: 20%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+ .carousel .carousel-list {
+    
+    width: 600%;
+    height: 100%;
+    display: flex;
+    transition: all 0.5s;
+}
+ .carousel .carousel-list li {
+    
+    flex: 1 1 0;
+}
+
+
+ .carousel .carousel-list li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+
+
+
+
+/* ----- Button ----- */
+
+
+
+.carousel > nav {
+    position: absolute;
+    bottom: 12px;
+    right: 24px;
+}
+
+.carousel > nav > button {
+    margin-left: 8px;
+    width: 24px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+
+.limited-width {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#fav-color {
+    display: block;
+    margin-left: 24px;
+    background-color: #333;
+    color: white;
+    border: none;padding: 8px;
+    border-radius: 15%;
+}
+
+
+#fav-color:hover {
+    opacity: 0.8;
+    cursor:pointer;
+}

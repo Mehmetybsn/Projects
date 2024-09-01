@@ -1,0 +1,72 @@
+h1 {
+    font-size: 18px;
+}
+
+header img {
+    display: flex;
+    width: 350px;
+    margin: 0 auto;
+}   
+main {
+    
+    background-color: gray;
+}
+main section:nth-child(1) {
+   
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+main section:nth-child(1) form button:nth-of-type(1){
+    margin-left: 60px;
+}
+main section:nth-child(1) input {
+    width: 350px;
+}
+
+main section:nth-child(2) {
+    
+    display: flex;
+    
+}
+.box {
+    border: 1px solid white;
+    flex-basis: 1;
+    flex-grow: 2;
+    background-color: aqua;
+}
+.box:nth-child(1) ul {
+    margin-top: 8px;
+}
+.box:nth-child(2) {
+    flex-basis: 1;
+    flex-grow: 1;
+    background-color: rgb(79, 160, 160);
+    
+}
+.box > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34, 80, 80);
+}
+.box:nth-child(3) input {
+    width: 200px;
+}
+#root > footer {
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.box form button {
+    margin-left: 40px;
+}

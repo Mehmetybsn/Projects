@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+}
+
+/* root scope : geçerliği olduğu alan*/
+:root {
+    /* custom properties */
+    /* colors */
+    --clr-primary-01:#1ed760;
+    --clr-primary-02:#1ab450;
+    --clr-primary-03:#159944;
+
+    --clr-secondary-01: #2680f7;
+
+    --clr-tertiary-01: #FFD2D7;
+
+    --clr-neutral-01:#fff;
+    --clr-neutral-02:#cfcfcf;
+    --clr-neutral-03:#a6a6a6;
+    --clr-neutral-04:#737373;
+    --clr-neutral-05:#000;
+
+    /*typography*/
+    --fs-display-xl:4rem;
+    --fs-display-lg:3.5rem;
+    --fs-display-md:3rem;
+
+    --fs-headline-xl:2rem;
+    --fs-headline-md:1.5rem;
+
+    --fs-body-lg:1.2rem;
+    --fs-body-md:1rem;
+    --fs-link-sm:0.6875rem
+
+    /* spacing */
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--clr-neutral-05);
+    color: var(--clr-neutral-01);
+}
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    font-size: var(--fs-headline-xl);
+    margin: 8px 0;
+}
+h2 {
+    font-size: var(--fs-headline-md);
+    
+}
+p {
+    font-size: var(--fs-body-md);
+    margin: 16px 0;
+}
+
+table, th, td {
+    border-bottom: 1px solid white;
+    padding: 8px;
+}
+
+
+
+#root > header {
+    
+    background-color: black;
+    color: white;
+    padding: 24px 0;
+    
+}
+
+
+main > .banner {
+    min-height: 400px;
+    background-image: url("https://wwwmarketing.scdn.co/static/images/premium/mobile-album-evergreen-2x.png");
+    background-color: linear-gradient(0deg, rgba(2,0,36,1) 12%, rgba(177,145,176,1) 100%);
+    
+    background-color: var(--clr-neutral-04);
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* width height */
+    background-position: top right;
+    color: var(--clr-neutral-01);
+    padding-top: 300px;
+}
+main > .banner  .content {
+    
+    max-width: 500px;
+}
+main > .banner > figure {
+    border: 1px solid red;
+}
+
+main .text-center {
+    text-align: center;
+    margin-top: 64px;
+}
+table {
+    margin: auto;
+}
+th {
+    padding: 32px 16px;
+}
+.benefits-comparison tbody tr:hover {
+    background-color: rgb(26, 26, 26);
+}
+.benefits-comparison .dark {
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: 1px underline dashed;
+}
+
+main .advantage {
+    margin: 64px 0;
+}
+main .advantage article {
+    text-align: center;
+}
+main .advantage article p {
+    max-width: 750px;
+    margin: auto;
+}
+
+main .advantage article ul {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 48px;
+    gap: 8px;
+}
+
+main .advantage aside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main #plans .plan {
+    background-color:rgb(36, 36, 36);
+    border-radius: 10px;
+    max-width: 450px;
+    margin: 32px auto;
+}
+
+main #plans .plan header {
+    padding: 8px 16px;
+}
+
+main #plans .plan footer {
+    padding: 8px 16px;
+} 
+
+main #plans .plan footer ul {
+    list-style-type: disc;
+    margin-left: 16px;
+}
+main #plans .plan footer li {
+    margin: 8px 0;
+}
+
+main #plans .plan footer > a{
+    margin: 16px;
+    display: block;
+    padding: 16px;
+    border-radius: 24px;
+    text-align: center;
+    color: var(--clr-neutral-05);
+}
+main #plans .plan footer > a.pink {
+    background-color: var(--clr-tertiary-01);
+}
+
+main #plans .plan footer > a.purple {
+    background-color: rgb(196, 177, 212);
+}
+main #plans .plan footer > a.yellow {
+    background-color: rgb(255, 200, 98);
+}
+main #plans .plan footer > a.blue {
+    background-color: rgb(165, 187, 209);
+}
+
+main #plans .plan footer p {
+    font-size: var(--fs-link-sm);
+    text-align: center;
+}
+
+main .questions > div {
+    text-align: center;
+    margin-top: 96px;
+}
+main .questions > div p>a {
+    font-size: var(--fs-body-md);
+}
+
+main .questions summary {
+    border-bottom: 1px solid white;
+    font-size: var(--fs-body-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+#root > footer {
+    
+    background-color: var(--clr-neutral-05);
+    color: var(--clr-neutral-01);
+    padding: 64px 0;
+}
+#root > footer .container-logo {
+    margin-right: 24px;
+    padding: 16px 0;
+}
+
+#root > footer .container-navs h2 {
+    color: #919496;
+    font-size: var(--fs-body-md);
+    margin: 16px 0;
+
+}
+#root > footer .container-navs li {
+    margin: 32px 0;
+}
+#root > footer .container-navs li>a:hover {
+    color: var(--clr-primary-01);
+}
+
+
+#root > footer .nav-social {
+    margin: 8px 0;
+    font-size: 24px;
+}
+#root > footer .nav-social i {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(36, 36, 36);
+    margin-right: 8px;
+}
+#root > footer .nav-social i:hover {
+    color: var(--clr-primary-01);
+}
+
+#root > footer .Türkiye {
+    text-align: right;
+    margin: 16px;
+    font-size: var(--fs-link-sm);
+}
+
+#root > footer .Türkiye a:hover {
+    color: var(--clr-primary-01);
+}
+
+#root > footer .last-section {
+    font-size: var(--fs-link-sm);
+    display: flex;
+    justify-content: space-between;
+}
+
+#root > footer .last-section ul {
+    flex-grow: 3;
+    flex-basis: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+#root > footer .last-section span {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
+    padding-right: 16px;
+}
+
+
+
+/* utilities*/
+.limited-width {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+
+
+/* component */
+
+/* logos*/
+.logo-main i{
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+/* Navigatiosn*/
+
+.hamburger-nav {
+    position: fixed;
+    top: 0;
+    right: -50vw;
+    height: 100vh;
+    padding-top: 64px;
+    background-color: var(--clr-neutral-05);
+    width: 50vw;
+    transition: right 500ms;
+}
+.hamburger-nav.active {
+    right: 0;
+}
+
+.hamburger-nav .btn-toggle-hamburger {
+    border: none;
+    background-color: var(--clr-neutral-05);
+    display: flex; 
+    flex-direction: column;
+    row-gap: 4px;
+    padding: 4px;
+    position: fixed;
+    top: 24px;
+    right: 24px;
+}
+
+.hamburger-nav .btn-toggle-hamburger span {
+    width: 20px;
+    flex-basis: 2px;
+    background-color: white;
+    transition: transform 0.3s;
+}
+.hamburger-nav.active .btn-toggle-hamburger span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+.hamburger-nav.active .btn-toggle-hamburger span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-nav.active .btn-toggle-hamburger span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+
+.hamburger-nav > ul li a {
+
+    display: flex;
+    height: 72px;
+    padding-left: 24px;
+    font-size: var(--fs-headline-xl);
+}
+
+/* links */
+.content .links a {
+    display: block;
+    padding: 16px 0;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.content .links a:hover {
+    transform: scale(1.02);
+}
+
+.content .links a:first-child{
+    background-color: var(--clr-tertiary-01);
+    margin: 16px  0;
+    color: var(--clr-neutral-05);
+}
+
+.content .links a:last-child{
+    border: 1px solid white;
+    background-color: var(--clr-neutral-05);
+    color: var(--clr-neutral-01);
+}
+
+
+p > a {
+    font-size: var(--fs-link-sm);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/*mydevice.io ekran size bulmak için*/ 
+@media screen and (min-width:750px) {
+    main > .banner {
+        background-size: 50%;
+        padding-top: 0;
+    }
+    #root > footer .container-navs {
+        display: flex;
+    }
+    #root > footer .container-navs nav {
+        flex: 1 1 0;
+    }
+
+    .content .links a {
+        display: inline-block;
+        padding: 16px 16px; 
+        
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .hamburger-nav{
+    position: static;
+    width: auto;
+    height: auto;
+    padding-top: 0;
+    }
+    .hamburger-nav > ul {
+        display: flex;
+        column-gap: 24px;
+    }
+    .hamburger-nav > ul li a {
+        font-size: var(--fs-body-md);
+        display: inline;
+        padding-left: 0;
+    }
+    .hamburger-nav .btn-toggle-hamburger {
+        display: none;
+    }
+
+    #root > header > .limited-width {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main > .banner .limited-width {
+        display: flex;
+    }
+    
+    main #plans {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main #plans .plan:nth-of-type(4) {
+        width: 390px;
+    }
+   
+
+
+    #root > footer .container-navs {
+        flex: 1 1 0;
+    }
+    #root > footer > .footer {
+        display: flex;
+    }
+
+    /* utilities */
+    .limited-width {
+        padding: 0;
+    }
+
+    
+}
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="logo">
+                <h1>ODIN</h1>
+            </div>
+            <div class="background-image">
+                <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="bakground image">
+            </div>
+
+            <div class="photos-info">
+                Photoby <a href="#">Halie West</a> on <a href="#">Unsplash</a> 
+            </div>
+        </div>
+
+        <div class="membership">
+            <p>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started
+            </p>
+
+            <p>
+                You <i>know</i> you want to.
+            </p>
+
+            <form action="">
+                <div class="sing-up">
+                    <h1>
+                        Let's do This
+                    </h1>
+
+                    <div class="input-container">
+                        <div class="flex-input">
+                            <label for="first-name">FIRST NAME</label> 
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+    
+                        <div class="flex-input">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+    
+                        <div class="flex-input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+
+                   <div class="input-container">
+                    <div class="flex-input">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                    </div>
+
+                    <div class="flex-input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    
+                    <div class="flex-input">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
+                   </div>
+
+                </div>
+
+                <button type="submit">
+                    Create Account
+                </button>
+            </form>
+            <div class="footer">
+                <span>Already have an account</span>
+                <a href="#">Log in</a>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+    <script>
+        let password1 = document.getElementById("password")
+        let password2 = document.getElementById("confirm-password")
+        let buttonEl = document.querySelector("button")
+        buttonEl.addEventListener("click", handleClick)
+
+        function handleClick(e) {
+            e.preventDefault()
+            if(password1.value != password2.value) {
+                password1.classList.add("invalid")
+
+            }
+        }
+
+        // function classListAddFunc(input) {
+        //     return input.classList.add("invalid")
+        // }
+    </script>
+
+
+
+</body>
+</html>

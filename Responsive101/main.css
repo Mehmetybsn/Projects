@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul,li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#root {
+    border: 2px solid pink;
+}
+
+#root >header {
+    border: 2px solid black;
+}
+
+main {
+    border: 2px solid black;
+}
+
+main .section-1 {
+    border: 4px solid red;
+}
+
+#root > footer {
+    border: 2px solid black;
+    background-color: #222;
+    color: white;
+}
+
+/* -------- Components ----------*/
+/* -------- Banners ----------*/
+.banner {
+    height: 50vmin;
+    background-color: lightgreen;
+}
+
+/* -------- Utilities ----------*/
+
+.limited-width {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* -------- Cards ----------*/
+
+.card-list .card{
+    border: 2px solid red;
+}
+
+
+/* -------- Navs ----------*/
+.nav-main {
+    border: 4px solid red;
+    position: fixed;
+    top: 0px;
+    right: -240px;
+    height: 100vh;
+    /* transition: right 0.5s; */
+    transition: all 500ms ease-in;
+
+    /* transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in */
+}
+.nav-main.active {
+    right: 0;
+}
+.nav-main ul {
+    border: 4px solid blue;
+    width: 240px;
+    margin-top: 80px;
+    
+}
+
+.nav-main li {
+    border: 2px solid aqua;
+}
+
+.nav-main a {
+    background-color: pink; 
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 24px;
+}
+
+.nav-main .btn-toggle {
+    background-color: black;
+    border: none;
+    color: white;
+    position: fixed;
+    top: 40px;
+    right: 16px;
+}
+
+/* Responsive media queries */ 
+@media screen and (min-width:1000px) {
+    /* hamburger menüyü doğal akışa ekler*/
+    .nav-main {
+        position: static;
+        height: auto;
+    }
+    .nav-main ul {
+        margin-top: 0;
+        width: auto;
+        display: flex;
+        column-gap: 24px;
+    }
+    .nav-main a {
+        padding-left: 0;
+    }
+    /* hamburger butonu sakla*/
+    .nav-main .btn-toggle {
+        display: none;
+    }
+    #root > header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-list {
+        display: flex;
+    }
+    .card-list .card{
+        flex: 1 1 0;
+    }
+    
+}

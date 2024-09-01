@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo da Vinci</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+   <div id="root">
+        <header>
+            <h1><a href="index.html">Leonardo da Vinci</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Hakkında</a></li>
+                    <li><a href="#art-works">Sanat Eserleri</a></li>
+                    <li><a href="#inventions">İcatları</a></li>
+                    <li><a href="#legacy">Mirası</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about" class="limited-width">
+                <h2>Leonardo da Vinci Hakkında</h2>
+                <!-- Biography, Overview, etc. -->
+                <p>Leonardo da Vinci (1452–1519), Rönesans döneminin İtalyan bilgesiydi. 15 Nisan 1452'de İtalya'nın Floransa yakınlarındaki Vinci kasabasında doğdu. Da Vinci, bir bilim adamı, matematikçi, mucit, mühendis, anatomist ve yazar olmasının yanı sıra, tüm zamanların en büyük sanatçılarından biri olarak kabul edilmektedir.</p>
+                <p>Genç bir adam olarak da Vinci, Floransa'da ünlü sanatçı Andrea del Verrocchio'nun yanında çıraklık yaptı ve burada çeşitli sanatsal teknikleri öğrendi. Daha sonra kendisini bağımsız bir usta olarak kanıtladı ve sanata yenilikçi yaklaşımı ve resim, çizim ve heykel alanlarındaki benzersiz becerisiyle ün kazandı.</p>
+                <p>Da Vinci'nin en ünlü sanat eserleri arasında esrarengiz gülümsemesi ve ayrıntılı kompozisyonuyla tanınan bir portre olan "Mona Lisa" ve İsa ile müritlerinin son yemeğini tasvir eden bir duvar resmi olan "Son Akşam Yemeği" yer alır.</p>
+                <p> Da Vinci, sanatsal başarılarının yanı sıra çeşitli bilim alanlarına önemli katkılarda bulunan ileri görüşlü bir düşünürdü. İnsan vücudunun anatomi ve fizyoloji anlayışını geliştiren doğru çizimlerini oluşturarak ayrıntılı anatomik çalışmalar yaptı. Ayrıca optik, mühendislik ve hidrodinamik gibi alanlarda da çığır açan keşifler yaptı.</p>
+                <p>
+                Da Vinci hayatı boyunca doyumsuz bir merakı ve öğrenme tutkusunu sürdürdü. Pek çoğu daha sonraki bilimsel gelişmelerin habercisi olan çok sayıda not defterini eskizler, gözlemler ve fikirlerle doldurdu.</p>
+                <p>Leonardo da Vinci, 2 Mayıs 1519'da Fransa'nın Amboise kentinde vefat etti ve arkasında dünya çapındaki insanlara ilham vermeye ve onları büyülemeye devam eden bir miras bıraktı. Çok yönlü yetenekleri, yenilikçi ruhu ve amansız bilgi arayışı, ona tarihin en etkili figürleri arasında bir yer kazandırdı.</p>
+                <button type="button" id="fav-color">Tıkla Bana</button>
+            </section>
+
+            <section id="art-works" >
+                <h2 class="limited-width">Sanat Eserleri</h2>
+                <!-- Gallery of artworks -->
+                <div class="carousel">
+                    <ul class="carousel-list">
+                        <li>
+                           <a href="mona-lisa.html">
+                            <img src="./images/artworks/monalisa.jpeg" alt="Mona Lisa" data-id="1">
+                           </a>
+
+                        </li>
+                        
+                        <li>
+                        <a href="son-akşam-yemeği.html"><img src="./images/artworks/leonardo-da-vinci-son-aksam-yemegi.jpeg" alt="Son Akşam yemeği" data-id="1"></a>
+                        </li>
+                        
+                        <li>
+                        <a href="images/artworks/meryemisaazizeanna.jpeg" target="_blank"><img src="./images/artworks/meryemisaazizeanna.jpeg" alt="Meryem Çocuk İsa Azize Anna" data-id="2"></a>
+                        </li>
+                    
+                        <li>
+                        <a href="images/artworks/salvadormundi.jpeg" target="_blank"><img src="./images/artworks/salvadormundi.jpeg" alt="Salvador Mundi"data-id="3"></a>
+                        </li>
+                
+                        <li>
+                        <a href="vitruvius-adamı.html"><img src="./images/artworks/vitruviusadam.jpeg" alt="Vitruvis Adam" data-id="4"></a>           
+                        </li>
+                        
+                        <li>
+                        <a href="images/artworks/erminlikadın.jpeg" target="_blank"><img src="./images/artworks/erminlikadın.jpeg" alt="Erminli Kadın" data-id="5"></a>
+                        </li>
+                    </ul>
+                    <nav>
+                        <button type="button" data-id="0">1</button>
+                        <button type="button" data-id="1">2</button>
+                        <button type="button" data-id="2">3</button>
+                        <button type="button" data-id="3">4</button>
+                        <button type="button" data-id="4">5</button>
+                        <button type="button" data-id="5">6</button>
+                    </nav>
+                </div>
+                <p><Ri:a></Ri:a>esmin büyük halini veya incelemesini görmek için tıklayınız</p>
+            </section>
+
+            <section id="inventions">
+                <h2 class="limited-width">İcatları</h2>
+                <!-- Overview of inventions -->
+                <div class="carousel">
+                    <ul class="carousel-list">
+                        <li>
+                           <a href="images/inventions/parasut_.jpg" target="_blank"><img src="images/inventions/parasut_.jpg" alt="Paraşüt"></a>
+                        </li>
+                        
+                        <li>
+                            <a href="images/inventions/araba.jpg" target="_blank"><img src="images/inventions/araba.jpg" alt="araba"></a>
+                        </li>
+                        
+                        <li>
+                            <a href="images/inventions/Helikopter.jpg" target="_blank"><img src="images/inventions/Helikopter.jpg" alt="Helikopter"></a>
+                        </li>
+                    
+                        <li>
+                            <a href="images/inventions/makinalıtüfek.jpg" target="_blank"><img src="images/inventions/makineli-tüfek-davinci.jpg" alt="Makinalı Tüfek"></a>
+                
+                        <li>
+                            <img src="images/inventions/ornitopter.jpg" alt="Ornitopter">
+                        </li>
+                        
+                        <li>
+                            <a href="images/inventions/dalgıçkıyafeti.jpg" target="_blank"><img src="images/inventions/dalis-takimlari.jpg" alt="Dalgıç Kıyafeti"></a>
+                        </li>
+                    </ul>
+                    <nav>
+                        <button type="button" data-id="0">1</button>
+                        <button type="button" data-id="1">2</button>
+                        <button type="button" data-id="2">3</button>
+                        <button type="button" data-id="3">4</button>
+                        <button type="button" data-id="4">5</button>
+                        <button type="button" data-id="5">6</button>
+                    </nav>
+                </div>
+                <p>Resmin büyük halini görmek için tıklayınız</p>
+            </section>
+
+            <section id="legacy" class="limited-width">
+                <h2>Mirası</h2>
+                <!-- Impact and influence -->
+                <h3>Sanat</h3>
+                <p>Leonardo'nun yenilikçi teknikleri ve sanata çığır açan yaklaşımı dünya çapındaki sanatçıları etkilemeye devam ediyor. Işık, gölge ve perspektif konusundaki ustalığı resimde gerçekçilik ve derinlik için yeni standartlar belirledi. Sanatçılar onun tekniklerini anlamak ve taklit etmek amacıyla yüzyıllardır onun eserlerini inceliyorlar.</p>
+                <h3>Bilim ve Anatomi</h3>
+                <p>Leonardo'nun ayrıntılı çizimlerinde ortaya çıkan titiz anatomik çalışmaları, anatomi alanında kalıcı bir etki yarattı. İnsan vücudunun doğru tasvirleri anatomistlere ve doktorlara değerli bilgiler sunarak tıp bilimindeki ilerlemelerin temelini attı.</p>
+                <h3>Mühendislik ve İcatlar</h3>
+                <p>Leonardo'nun icatlara ve mühendislik harikalarına yönelik tasarımları zamanının yüzyıllar ötesindeydi. Fikirlerinin çoğu yaşamı boyunca hayata geçirilmemiş olsa da nesiller boyu mühendislere, mucitlere ve tasarımcılara ilham kaynağı oldu. Yenilikçi düşüncesi ve problem çözme yaklaşımı, modern teknoloji ve mühendisliği etkilemeye devam ediyor.</p>
+                <h3>Disiplinlerarası Düşünme</h3>
+                <p>Leonardo'nun bilgiye disiplinler arası yaklaşımı, günümüzün birbirine bağlı dünyasında giderek daha geçerli hale geldi. Sanatı, bilimi ve mühendisliği entegre etme yeteneği, karmaşık sorunların üstesinden gelmek ve disiplinler arası yeniliği teşvik etmek isteyenler için bir model görevi görüyor.</p>
+                <h3>Kültürel ikon</h3>
+                <p>Leonardo da Vinci, dehası, yaratıcılığı ve entelektüel merakı nedeniyle saygı duyulan kültürel bir simge haline geldi. Adı mükemmellik ve yenilikle eş anlamlıdır ve eserleri dünya çapındaki izleyicileri büyülemeye devam etmektedir. Edebiyatta, filmde ve popüler kültürde övülüyor ve tarihin en etkili isimlerinden biri olarak statüsünü daha da güçlendiriyor.</p>
+                <p>Genel olarak, Leonardo da Vinci'nin etkisi ve etkisi çok büyüktür; yüzyıllara ve disiplinlere yayılmıştır. Onun mirası, çevremizdeki dünyayı algılama ve onunla etkileşim kurma biçimimize ilham vermeye ve onu şekillendirmeye devam ediyor.</p>
+            </section>
+        </main>
+
+        <footer>
+            <h1><a href="index.html">Leonardo da Vinci</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Hakkında</a></li>
+                    <li><a href="#art-works">Sanat Eserleri</a></li>
+                    <li><a href="#inventions">İcatları</a></li>
+                    <li><a href="#legacy">Mirası</a></li>
+                </ul>
+            </nav>
+            
+        </footer>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

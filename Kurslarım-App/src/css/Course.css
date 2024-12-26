@@ -1,0 +1,40 @@
+.course-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.course {
+    width: 265px;
+    height: 350px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.course-title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.course-desc {
+    font-size: 15px;
+}
+
+.course-price {
+    font-weight: bold;
+    color: red;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.course-link {
+    font-size: 12px;
+    text-align: right;
+}
+
+.course-link a {
+    text-decoration: none;
+}

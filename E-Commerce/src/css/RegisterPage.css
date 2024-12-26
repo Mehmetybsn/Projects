@@ -1,0 +1,31 @@
+.register {
+    height: 100vh;
+    background-image: url(../images/login-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-div {
+    width: 400px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    box-shadow: 1px 2px 3px lightgray;
+    border-radius: 5px;
+}
+
+.errors {
+    color: red;
+}

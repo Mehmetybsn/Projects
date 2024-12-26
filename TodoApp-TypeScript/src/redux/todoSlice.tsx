@@ -1,0 +1,28 @@
+import { createSlice } from '@reduxjs/toolkit'
+import type { PayloadAction } from '@reduxjs/toolkit'
+import { TodoInitialState, todoType } from '../types/Types'
+
+const initialState: TodoInitialState = {
+    todos: []
+}
+
+export const todoSlice = createSlice({
+    name: "todo",
+    initialState,
+    reducers: {
+        createTodo : (state: TodoInitialState, action: PayloadAction<todoType>)=> {
+            state.todos = [...state.todos, action.payload]
+        },
+        removeTodoById : (state:TodoInitialState, action: PayloadAction<Number>) => {
+            state.todos =[...state.todos.filter((todo:todoType)=> todo.id !== action.payload)]
+        },
+        updateTodo : (state: TodoInitialState, action: PayloadAction<todoType>) => {
+            state.todos = [...state.todos.map((todo:todoType)=> todo.id !== action.payload.id ? todo : action.payload)]
+        }
+    }
+})
+
+
+export const { createTodo, removeTodoById, updateTodo } = todoSlice.actions
+
+export default todoSlice.reducer

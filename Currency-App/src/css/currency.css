@@ -1,0 +1,31 @@
+.currency-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.amount, .result {
+    width: 80px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.from-currency-option, .to-currency-option {
+    width: 70px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.exchange-button {
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
